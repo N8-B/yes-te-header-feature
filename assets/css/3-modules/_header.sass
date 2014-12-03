@@ -1,0 +1,169 @@
+// Header //
+
+/* Title above Featured Image */
+.featured-img
+  padding: 0 0 0 0
+  +media($tablet)
+    padding: $margin*2 0
+  +media($tablet-landscape)
+    max-width: 1024px
+  +media($desktop)
+    padding-right: $margin*2
+    padding-left: $margin*2
+  +media($largedesktop)
+    padding-right: $margin*2
+    padding-left: $margin*2
+  
+  figure
+    padding-bottom: 0
+  
+  figcaption
+    font-size: $base-font-size/1.25
+    line-height: $base-line-height*0.875
+    color: $text-color
+    border-bottom: 1px solid rgba($text-color, 0.5)
+    padding-top: $margin/2
+    padding-bottom: $margin/1.25
+    +media($mobile)
+      padding-left: $margin
+      padding-right: $margin
+    +media($mobile-landscape)
+      padding-left: $margin
+      padding-right: $margin
+    +media($tablet)
+      padding-left: $margin
+      padding-right: $margin
+    +media($tablet-landscape)
+      padding-left: $margin
+      padding-right: $margin
+      max-width: 1024px
+    +media($desktop)
+      padding-right: 0
+      padding-left: 0
+    +media($largedesktop)
+      padding-right: 0
+      padding-left: 0
+
+.header
+  color: $title-color
+  //+media($mobile)
+    margin-bottom: $margin
+  //+media($mobile-landscape)
+    margin-bottom: $margin
+  //+media($tablet)
+    margin-bottom: $margin
+  //+media($tablet-landscape)
+    margin-bottom: $margin
+  //+media($desktop)
+    margin-bottom: $margin
+  //+media($largedesktop)
+    margin-bottom: $marginz
+  
+  img
+    max-width: 100%
+    height: auto
+        
+  .article-titles
+    +span-columns(12)
+    +media($mobile)
+      margin-bottom: 0
+    +media($mobile-landscape)
+      margin-bottom: 0
+    +media($tablet)
+      margin-bottom: 0
+    +media($tablet-landscape)
+      margin-bottom: $margin*2
+    +media($desktop)
+      margin-bottom: $margin*2.5
+    +media($largedesktop)
+      margin-bottom: $margin*2.5
+    
+    .article-type
+      padding-bottom: $margin * 0.5
+      color: $articleType-color
+      word-spacing: 0.125em
+      text-transform: uppercase
+      font-size: $h6-font-size/1.25
+      border-bottom: 2px solid rgba($black, 0.15)
+      margin-top: $margin*1.5
+      +media($mobile-landscape)
+        margin-top: $margin*1.2
+      +media($tablet)
+        font-size: $h6-font-size*1.1
+        margin-top: $margin*2
+      +media($tablet-landscape)
+        font-size: $h6-font-size*1.125
+        margin-top: $margin*2
+      +media($desktop)
+        font-size: $h6-font-size*1.15
+        margin-top: $margin*2
+      +media($largedesktop)
+        font-size: $h6-font-size*1.15
+        margin-top: $margin*2
+    
+    .article-title
+      margin-bottom: 0
+      font-size: $h1-font-size*1.3
+      line-height: $line-height/1.4
+      text-transform: uppercase
+      word-spacing: 0.125em
+      +media($mobile)
+        margin-top: $margin*0.75
+      +media($mobile-landscape)
+        margin-top: $margin*0.75
+      +media($tablet)
+        margin-top: $margin
+        font-size: $h1-font-size*1.95
+      +media($tablet-landscape)
+        margin-top: $margin
+        font-size: $h1-font-size*2
+      +media($desktop)
+        margin-top: $margin
+        font-size: $h1-font-size*2
+      +media($largedesktop)
+        margin-top: $margin
+        font-size: $h1-font-size*2
+      
+    .article-subtitle
+      margin-top: 0
+      font-weight: 300
+      font-size: $h3-font-size*0.9
+      line-height: 1.25
+      color: $subTitle-color
+      +media($mobile)
+        margin-bottom: 0
+      +media($mobile-landscape)
+        margin-bottom: 0
+      +media($tablet)
+        font-size: $h3-font-size*1.25
+        margin-bottom: 0
+      +media($tablet-landscape)
+        font-size: $h3-font-size*1.3
+        margin-bottom: 0
+      +media($desktop)
+        font-size: $h3-font-size*1.3
+        margin-bottom: 0
+      +media($largedesktop)
+        font-size: $h3-font-size*1.3
+        margin-bottom: 0
+
+    .author-name
+      color: $subTitle-color
+      text-decoration: none
+      text-transform: uppercase
+      font-size: $base-font-size
+      word-spacing: 0.125em
+      +media($tablet)
+        font-size: $base-font-size*1.2
+      +media($tablet-landscape)
+        font-size: $base-font-size*1.25
+      +media($desktop)
+        font-size: $base-font-size*1.25
+      +media($largedesktop)
+        font-size: $base-font-size*1.25
+
+    span
+      color: $subTitle-color
+
+    a
+      color: darken($white, 10%)
